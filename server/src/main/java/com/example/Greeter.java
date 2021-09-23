@@ -1,19 +1,18 @@
-package com.example;
+import java.util.Scanner;
 
-/**
- * This is a class.
- */
-public class Greeter {
+public class HelloWorld {
 
-  /**
-   * This is a constructor.
-   */
-  public Greeter() {
+    public static void main(String[] args) {
 
-  }
+        // Creates a reader instance which takes
+        // input from standard input - keyboard
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Enter a number: ");
 
-  //TODO: Add javadoc comment
-  public String greet(String someone) {
-    return String.format("Hello, %s!", someone);
-  }
+        // nextInt() reads the next integer from the keyboard
+        int number = reader.nextInt();
+
+        // println() prints the following line to the output screen
+        System.out.println("You entered: " + number);
+    }
 }
