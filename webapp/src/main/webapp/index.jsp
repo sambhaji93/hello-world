@@ -1,6 +1,18 @@
-<h1> Hello, Welcome to Our First DevOps project !!   </h1>
-<h2> Don't forget to subscribe my channel :) </h2>
-<h2> Keep learning </h2>
-<h2> Be safe </h2>
+import java.util.Scanner;
 
+public class HelloWorld {
 
+    public static void main(String[] args) {
+
+        // Creates a reader instance which takes
+        // input from standard input - keyboard
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+
+        // nextInt() reads the next integer from the keyboard
+        int number = reader.nextInt();
+
+        // println() prints the following line to the output screen
+        System.out.println("You entered: " + number);
+    }
+}
